@@ -14,7 +14,7 @@ class _OnBoardState extends State<OnBoard> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 2), () {
+    Timer(Duration(seconds: 4), () {
       Navigator.pushNamed(context, MyRoute.loginRoute);
     });
   }
