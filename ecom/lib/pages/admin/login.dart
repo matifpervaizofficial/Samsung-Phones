@@ -10,8 +10,8 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      bottom: false,
-      top: false,
+      bottom: true,
+      top: true,
       child: Scaffold(
         body: SingleChildScrollView(
           child: Container(
@@ -149,6 +149,9 @@ class LoginPage extends StatelessWidget {
                     "Register",
                     style: TextStyle(color: Colors.purple[200], fontSize: 20),
                   ),
+                ),
+                SizedBox(
+                  height: 100,
                 )
               ],
             ),

@@ -21,12 +21,10 @@ class _OnBoardState extends State<OnBoard> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Container(
-      child: Image.network(
-        "https://cdn.wallpapersafari.com/16/27/uzNp9Y.jpg",
-        fit: BoxFit.fill,
-      ),
+    return Material(
+        child: Image.network(
+      "https://cdn.wallpapersafari.com/16/27/uzNp9Y.jpg",
+      fit: BoxFit.fill,
     ));
   }
 }
