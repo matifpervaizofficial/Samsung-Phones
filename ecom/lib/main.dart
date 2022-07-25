@@ -29,7 +29,7 @@ class _MyappState extends State<Myapp> {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      initialRoute: "/splashroute",
+      initialRoute: "/homeroute",
       routes: {
         MyRoute.OnBoard: (context) => OnBoard(),
         MyRoute.homeRoute: (context) => Home(),

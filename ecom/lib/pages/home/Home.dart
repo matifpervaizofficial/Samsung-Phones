@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, sort_child_properties_last
 
+import 'package:ecom/pages/slider.dart';
 import 'package:ecom/utils/routes.dart';
 import 'package:flutter/material.dart';
 
@@ -48,6 +49,7 @@ class Home extends StatelessWidget {
             ),
             Container(
               height: 250,
+              width: double.infinity,
               child: Card(
                 child: Image.asset(
                   'assets/images/headerimage.jpg',
@@ -61,43 +63,33 @@ class Home extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            Container(
-              width: 340,
-              child: Text(
-                textAlign: TextAlign.justify,
-                "Samsung is committed to complying with local laws and regulations as well as applying a strict global code of conduct to all employees. It believes that ethical management is not only a tool for responding to the rapid changes in the global business environment",
-              ),
-            ),
-            SizedBox(
-              height: 40,
-            ),
-            Container(
-              width: 110,
-              height: 30,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.deepPurple),
-                onPressed: () {
-                  Navigator.pushNamed(context, MyRoute.ProductsList);
-                },
-                child: Row(
-                  children: [
-                    Text("check"),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Icon(Icons.search),
-                  ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                width: double.infinity,
+                child: Text(
+                  textAlign: TextAlign.justify,
+                  "Samsung is committed to complying with local laws and regulations as well as applying a strict global code of conduct to all employees. It believes that ethical management is not only a tool for responding to the rapid changes in the global business environment",
                 ),
               ),
             ),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, MyRoute.ProductsGrid);
-                },
-                child: Text("Grid"))
+            Divider(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                GestureDetector(
+                  onTap: (() {
+                    Navigator.pushNamed(context, MyRoute.ProductsList);
+                  }),
+                  child: Text(
+                    "Check Latest Products",
+                    style: TextStyle(fontSize: 30),
+                  ),
+                ),
+                Icon(Icons.open_in_new)
+              ],
+            ),
+            SliderPage()
           ],
         ),
       ),

@@ -1,6 +1,7 @@
 {
     "products" :[
         {
+            "id": "1",
         "name": "Galaxy A23 ",
         "desc":
             "The Galaxy A23's Ambient Edge design connects the camera with the body seamlessly with simple but refined curves.",
@@ -9,6 +10,7 @@
         "price": 450.0
     },
    {
+    "id": "2",
         "name" : "Galaxy M13 ",
         "desc" : "The Galaxy M13 Ambient Edge design connects the camera with the body seamlessly with simple but refined curves.",
         "image":
@@ -16,6 +18,7 @@
         "price": 340.0
     },
     {
+        "id": "3",
         "name": "Galaxy A70 ",
         "desc":
             "Samsung Galaxy A70 is powered by the Qualcomm SDM675 Snapdragon 675 Octa-core",
@@ -24,6 +27,7 @@
         "price": 339
     },
     {
+        "id": "4",
         "name": "Galaxy S20 E ",
         "desc":
             "Samsung Galaxy S20 E is Powered by Qualcomm SM8250 Snapdragon 865 5G (7 nm+)",
@@ -32,6 +36,7 @@
         "price": 1200
     },
     {
+        "id": "5",
         "name": "Galaxy Z-Flip 4  ",
         "desc":
             "Samsung Galaxy Z Flip 4 is pack with 12 MP (wide) + 12 MP (ultrawide) on the rear side while on the front there is a single camera, 10 MP (wide)",
@@ -40,7 +45,7 @@
         "price": 249
     },
     {
-
+        "id": "6",
         "name": "Galaxy A23 ",
         "desc":
             "The Galaxy A23's Ambient Edge design connects the camera with the body seamlessly with simple but refined curves.",
@@ -50,7 +55,7 @@
 
     },
     {
-        
+        "id": "7",
         "name": "Galaxy A52 ",
         "desc":
             "The Galaxy A52 has a 6.5-inch AMOLED display with a 90Hz of high refresh rate.",
@@ -59,21 +64,15 @@
         "price": 240.0
     },
     {
+        "id": "8",
         "name": "Note 15 ",
         "desc":
             "The Galaxy M13 Ambient Edge design connects the camera with the body seamlessly with simple but refined curves.",
         "image":
             "https://static.toiimg.com/thumb/resizemode-4,msid-81548510,width-1200,height-900/81548510.jpg",
         "price": 240.0
-    },
-    {
-        "name": "Galaxy S21 ",
-        "desc":
-            "Despite the Drop in Shipments for 2021, the Galaxy S21 Series Are Still Expected to Sell Better Than the Galaxy S20",
-        "image":
-            "https://cdn.wccftech.com/wp-content/uploads/2021/03/Galaxy-S21-with-S-Pen-support.jpg",
-        "price": 240.0
     }
+    
     
     ]
 }

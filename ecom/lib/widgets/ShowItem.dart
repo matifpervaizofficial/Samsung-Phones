@@ -14,6 +14,15 @@ class ShowItem extends StatelessWidget {
     return VxBox(
       child: Row(
         children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Hero(
+              //tag is used to connect two similar things
+              tag: Key(item.id.toString()),
+              child: AspectRatio(
+                  aspectRatio: 3 / 4, child: Image.network(item.image)),
+            ),
+          ),
           Expanded(
               child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
