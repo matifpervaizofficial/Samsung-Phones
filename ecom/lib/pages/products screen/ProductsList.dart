@@ -3,6 +3,7 @@
 import 'dart:convert';
 
 import 'package:ecom/pages/products%20screen/productdetail.dart';
+import 'package:ecom/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -40,6 +41,12 @@ class _ProductsListState extends State<ProductsList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pushNamed(context, MyRoute.CartPage);
+        },
+        child: Icon(Icons.shopping_basket),
+      ),
       appBar: AppBar(
         actions: [
           GestureDetector(

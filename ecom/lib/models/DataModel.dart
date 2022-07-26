@@ -82,22 +82,6 @@ class Item {
 class DataModel {
   static List items = [
     Item(
-        id: "1",
-        name: "Galaxy S21 ",
-        desc:
-            "Despite the Drop in Shipments for 2021, the Galaxy S21 Series Are Still Expected to Sell Better Than the Galaxy S20",
-        image:
-            "https://cdn.wccftech.com/wp-content/uploads/2021/03/Galaxy-S21-with-S-Pen-support.jpg",
-        price: 240.0),
-    Item(
-        id: "2",
-        name: "Note 15 ",
-        desc:
-            "The Galaxy M13 Ambient Edge design connects the camera with the body seamlessly with simple but refined curves.",
-        image:
-            "https://static.toiimg.com/thumb/resizemode-4,msid-81548510,width-1200,height-900/81548510.jpg",
-        price: 240.0),
-    Item(
         id: "3",
         name: "Galaxy A52 ",
         desc:

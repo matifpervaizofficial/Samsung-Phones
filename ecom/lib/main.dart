@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors, void_checks
 
+import 'package:ecom/pages/cartpage.dart';
 import 'package:ecom/pages/home/Home.dart';
 import 'package:ecom/pages/admin/Signup.dart';
 import 'package:ecom/pages/admin/login.dart';
 import 'package:ecom/pages/products%20screen/ProductsGrid.dart';
-import 'package:ecom/pages/products%20screen/productdetail.dart';
 import 'package:ecom/pages/splashscreen.dart';
 import 'package:ecom/utils/routes.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +29,7 @@ class _MyappState extends State<Myapp> {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      initialRoute: "/homeroute",
+      initialRoute: "/splashroute",
       routes: {
         MyRoute.OnBoard: (context) => OnBoard(),
         MyRoute.homeRoute: (context) => Home(),
@@ -37,6 +37,7 @@ class _MyappState extends State<Myapp> {
         MyRoute.signupRoute: (context) => SignupPage(),
         MyRoute.ProductsList: (context) => ProductsList(),
         MyRoute.ProductsGrid: (context) => ProductsGrid(),
+        MyRoute.CartPage: (context) => cart(),
       },
     );
   }

@@ -4,6 +4,8 @@ import 'package:ecom/models/DataModel.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
+import '../utils/routes.dart';
+
 class ShowItem extends StatelessWidget {
   final Item item;
 
@@ -37,12 +39,14 @@ class ShowItem extends StatelessWidget {
                 children: [
                   "\$${item.price}".text.bold.xl.make(),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, MyRoute.CartPage);
+                    },
                     style: ButtonStyle(
                         shape: MaterialStateProperty.all(
                       StadiumBorder(),
                     )),
-                    child: "Buy".text.make(),
+                    child: "Add to Cart".text.make(),
                   )
                 ],
               ).pOnly(right: 8.0)

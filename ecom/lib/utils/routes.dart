@@ -8,4 +8,5 @@ class MyRoute {
   static String ProductsList = "/productslistroute";
   static String ProductsGrid = "/productsgridroute";
   static String ProductDetail = "/productdetailpage";
+  static String CartPage = "/cartpage";
 }

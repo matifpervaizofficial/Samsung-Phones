@@ -3,6 +3,7 @@
 import 'package:ecom/pages/slider.dart';
 import 'package:ecom/utils/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -81,15 +82,24 @@ class Home extends StatelessWidget {
                   onTap: (() {
                     Navigator.pushNamed(context, MyRoute.ProductsList);
                   }),
-                  child: Text(
-                    "Check Latest Products",
-                    style: TextStyle(fontSize: 30),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      "Check Latest Products",
+                      style: TextStyle(fontSize: 30),
+                    ),
                   ),
                 ),
                 Icon(Icons.open_in_new)
               ],
             ),
-            SliderPage()
+            GestureDetector(
+                onTap: () {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                      content:
+                          "Please Click on Arrow to See Products".text.make()));
+                },
+                child: SliderPage())
           ],
         ),
       ),

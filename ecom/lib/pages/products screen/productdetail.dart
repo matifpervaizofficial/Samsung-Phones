@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:ecom/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -67,15 +68,17 @@ class ProductDetail extends StatelessWidget {
             children: [
               "\$${catalog.price}".text.bold.xl.make(),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, MyRoute.CartPage);
+                },
                 style: ButtonStyle(
                     shape: MaterialStateProperty.all(
                   StadiumBorder(),
                 )),
-                child: "Buy".text.make(),
-              )
+                child: "Add to Cart".text.make(),
+              ),
             ],
-          ).p(20.0).wh(double.infinity, 60)
+          ).p(20.0).wh(double.infinity, 90)
         ],
       ),
     );
